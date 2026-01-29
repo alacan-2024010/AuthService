@@ -1,0 +1,15 @@
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\bin\Debug\net8.0\AuthService2024010.Application.deps.json
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\bin\Debug\net8.0\AuthService2024010.Application.dll
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\bin\Debug\net8.0\AuthService2024010.Application.pdb
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\bin\Debug\net8.0\AuthService2024010.Domain.dll
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\bin\Debug\net8.0\AuthService2024010.Domain.pdb
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\AuthService2024010.Application.csproj.AssemblyReference.cache
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\AuthService2024010.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\AuthService2024010.Application.AssemblyInfoInputs.cache
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\AuthService2024010.Application.AssemblyInfo.cs
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\AuthService2024010.Application.csproj.CoreCompileInputs.cache
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\AuthService2024010.Application.csproj.CopyComplete
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\AuthService2024010.Application.dll
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\refint\AuthService2024010.Application.dll
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\AuthService2024010.Application.pdb
+C:\Users\Informatica\Documents\AuthService2024010\src\AuthService2024010.Application\obj\Debug\net8.0\ref\AuthService2024010.Application.dll
