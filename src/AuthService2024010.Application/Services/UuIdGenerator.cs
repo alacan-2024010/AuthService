@@ -1,6 +1,6 @@
 using System.Security.Cryptography;
 using System.Text;
-namespace AuthService2024010.Application.ServicesM;
+namespace AuthService2024010.Application.Services;
 
 public static class UuIdGenerator
 {
