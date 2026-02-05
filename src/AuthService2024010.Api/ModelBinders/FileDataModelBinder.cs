@@ -32,7 +32,7 @@ public class FileDataModelBinder : IModelBinder
     }
 }
 
-public class FileDataModelBinderProvider : IModelProvider
+public class FileDataModelBinderProvider : IModelBinderProvider
 {
     public IModelBinder? GetBinder(FileDataModelBinderProviderContext context)
     {

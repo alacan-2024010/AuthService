@@ -3,22 +3,11 @@ using AuthService2024010.Api.Extensions;
 using AuthService2024010.Api.ModelBinders;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
-using System.ComponentModel.Design.Serialization;
-using Microsoft.VisualBasic;
-using System.Net.Security;
-using System.Xml.Schema;
-using System.IO.Pipes;
-using System.Runtime.CompilerServices;
-using System.ComponentModel.DataAnnotations;
-using System.Net.WebSockets;
-using System.Reflection.Metadata.Ecma335;
-using System.Security.Cryptography.X509Certificates;
-using System.Net;
-
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.host.UseSeriLog((context, services, loggerConfiguration) =>
+builder.Host.UseSeriLog((context, services, loggerConfiguration) =>
 
     loggerConfiguration
         .ReadFrom.Configuration(context.Configuration)
@@ -26,14 +15,14 @@ builder.host.UseSeriLog((context, services, loggerConfiguration) =>
 
 builder.Services.AddControllers(FileOptions =>
 {
-    FileOptions.ModelBinderProvider.Insert(0, new FileDataModelBinderProvider());
+    FileOptions.ModelBinderProviders.Insert(0, new FileDataModelBinderProvider());
 })
 .AddJsonOptions(o =>
 {
     o.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
 });
 
-builder.Services.AddApplicationServices(builder.configuration);
+builder.Services.AddApplicationServices(builder.Configuration);
 
 
 var app = builder.Build();
@@ -77,12 +66,13 @@ app.UseSecurityHeaders(policies => policies
 // Core middleLewares
 app.UseHttpsRedirection();
 app.UseCors("DefaultCorsPolicy");
-app.UseRateLimiter();
-app.UseAuthentication();
-app.UseAuthorization();
+// app.UseRateLimiter();
+// app.UseAuthentication();
+// app.UseAuthorization();
+
 app.MapController();
 
-app.MapHeltChecks("/health");
+app.MapHealthChecks("/health");
 
 
 app.MapGet("/health", () =>
@@ -93,7 +83,7 @@ app.MapGet("/health", () =>
         timestamps = DateTime.MaxValue.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffz")
 
     };
-    return Results.ok(response);
+    return Results.Ok(response);
 });
 
 // Startup log: addresses and health endpoint

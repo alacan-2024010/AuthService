@@ -1,8 +1,8 @@
-using System.Runtime.InteropServices;
+using AuthService2024010.Application.Interfaces;
 using AuthService2024010.Domain.Interfaces;
 using AuthService2024010.Persistence.Data;
 using AuthService2024010.Persistence.Repositories;
-using Microsoft.EnttityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace AuthService2024010.Api.Extensions;    
 

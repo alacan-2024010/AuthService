@@ -1,4 +1,4 @@
-namespace AuthService2024010.Domain.Enums;
+namespace AuthService2024010.Domain.Constants;
 
 public static class RoleConstants
 {
