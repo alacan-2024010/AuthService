@@ -7,7 +7,7 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Host.UseSeriLog((context, services, loggerConfiguration) =>
+builder.Host.UseSerilog((context, services, loggerConfiguration) =>
 
     loggerConfiguration
         .ReadFrom.Configuration(context.Configuration)
@@ -70,7 +70,7 @@ app.UseCors("DefaultCorsPolicy");
 // app.UseAuthentication();
 // app.UseAuthorization();
 
-app.MapController();
+app.MapControllers();
 
 app.MapHealthChecks("/health");
 
@@ -80,7 +80,7 @@ app.MapGet("/health", () =>
     var response = new
     {
         status = "Healthy",
-        timestamps = DateTime.MaxValue.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffz")
+        timestamps = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")
 
     };
     return Results.Ok(response);
@@ -115,35 +115,6 @@ app.Lifetime.ApplicationStarted.Register(() =>
     }
 });
 
-// Startup log: addresses and health endpoint
-var startupLogger = app.Services.GetRequiredService<ILogger<Program>>();
-app.Lifetime.ApplicationStarted.Register(() =>
-{
-    try
-    {
-        var server = app.Services.GetRequiredService<IServer>();
-        var addressesFeature = server.Features.Get<IServerAddressesFeature>();
-        var addresses = (IEnumerable<string>?)addressesFeature?.Addresses ?? app.Urls;
- 
-        if (addresses != null && addresses.Any())
-        {
-            foreach (var addr in addresses)
-            {
-                var health = $"{addr.TrimEnd('/')}/health";
-                startupLogger.LogInformation("AuthService API is running at {Url}. Health endpoint: {HealthUrl}", addr, health);
-            }
-        }
-        else
-        {
-            startupLogger.LogInformation("AuthService API started. Health endpoint: /health");
-        }
-    }
-    catch (Exception ex)
-    {
-        startupLogger.LogWarning(ex, "Failed to determine the listening addresses for startup log");
-    }
-});
- 
 // Initialize database and seed data
 using (var scope = app.Services.CreateScope())
 {

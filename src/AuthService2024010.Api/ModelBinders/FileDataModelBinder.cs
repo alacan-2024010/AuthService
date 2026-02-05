@@ -10,7 +10,7 @@ public class FileDataModelBinder : IModelBinder
     {
         ArgumentNullException.ThrowIfNull(bindingContext);  
 
-        if(typeof(IFileData).IsAssignableFrom(bindingContext.ModelType))
+        if(!typeof(IFileData).IsAssignableFrom(bindingContext.ModelType))
         {
             return Task.CompletedTask;
         }
@@ -34,12 +34,13 @@ public class FileDataModelBinder : IModelBinder
 
 public class FileDataModelBinderProvider : IModelBinderProvider
 {
-    public IModelBinder? GetBinder(FileDataModelBinderProviderContext context)
+    public IModelBinder? GetBinder(ModelBinderProviderContext context)
     {
-        if(typeof(IFileData).IsAssignableFrom(context.Metadata.ModelType))
+        if (typeof(IFileData).IsAssignableFrom(context.Metadata.ModelType))
         {
             return new FileDataModelBinder();
         }
+
         return null;
     }
 }

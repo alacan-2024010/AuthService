@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj": {}
+    "C:\\AuthService\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj": {
+    "C:\\AuthService\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj",
+        "projectUniqueName": "C:\\AuthService\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj",
         "projectName": "AuthService2024010.Application",
-        "projectPath": "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj",
-        "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Application\\obj\\",
+        "projectPath": "C:\\AuthService\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj",
+        "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages\\",
+        "outputPath": "C:\\AuthService\\src\\AuthService2024010.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj": {
-                "projectPath": "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj"
+              "C:\\AuthService\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj": {
+                "projectPath": "C:\\AuthService\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj"
               }
             }
           }
@@ -71,17 +71,17 @@
         }
       }
     },
-    "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj": {
+    "C:\\AuthService\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj",
+        "projectUniqueName": "C:\\AuthService\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj",
         "projectName": "AuthService2024010.Domain",
-        "projectPath": "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj",
-        "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Domain\\obj\\",
+        "projectPath": "C:\\AuthService\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj",
+        "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages\\",
+        "outputPath": "C:\\AuthService\\src\\AuthService2024010.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

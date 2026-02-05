@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nx1PhvNmFx1qcjoed6hDcJzUXOwU0SoDa52V2LEh4rK8ex4sLIazBni66SNBhUL+0J0JS1nWGbrPjYdwwsDq1Q==",
+  "dgSpecHash": "rdAMPazLcpeYOV3/rqQ1GXgxnlGF57H4vEJM7dbWXdlxFSm+PXTc+W2TBCl9smujy8OvMmb2MTmeGNgkXnu9AQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Informatica\\AuthService2024010\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj",
+  "projectFilePath": "C:\\AuthService\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
