@@ -1,17 +1,16 @@
 namespace AuthService2024010.Application.Exceptions;
 
-public class BusinnesException : Exception
+public class BusinessException : Exception
 {
-    public string ErrorCode{get;}
+    public string ErrorCode { get; }
 
-    public BusinnesException(string errorCode, string message) : base(message)
+    public BusinessException(string errorCode, string message) : base(message)
     {
         ErrorCode = errorCode;
     }
 
-    public BusinnesException(string errorCode, string message, Exception innerException) : base(message, innerException)
+    public BusinessException(string errorCode, string message, Exception innerException) : base(message, innerException)
     {
         ErrorCode = errorCode;
     }
-    
 }

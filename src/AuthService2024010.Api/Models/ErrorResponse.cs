@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace AuthService2024010.Domain.Models;
+namespace AuthService2024010.Api.Models;
 
 public class ErrorResponse
 {

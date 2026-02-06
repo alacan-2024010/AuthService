@@ -4,6 +4,6 @@ namespace AuthService2024010.Application.Interfaces;
 
 public interface IJwtTokenService
 {
-    Task<string> GenerateToken(User user);
+    string GenerateToken(User user);
     
 }
