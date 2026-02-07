@@ -77,7 +77,7 @@ public class CloudinaryService(IConfiguration configuration) : ICloudinaryServic
     }
 
 
-    public string GetDefaultProfilePictureUrl()
+    public string GetDefaultAvatarUrl()
     {
         var defaultFile = configuration["CloudinarySettings:DefaultAvatarPath"]
                           ?? "default-avatar.png";
@@ -88,7 +88,7 @@ public class CloudinaryService(IConfiguration configuration) : ICloudinaryServic
     public string GetFullImageUrl(string fileName)
     {
         var baseUrl = configuration["CloudinarySettings:BaseUrl"]
-                      ?? "https://res.cloudinary.com/dqx1m6nxh/image/upload/";
+                      ?? "https://res.cloudinary.com/dadsac1uk/image/upload/";
 
         if (string.IsNullOrWhiteSpace(fileName))
         {

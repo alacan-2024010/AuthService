@@ -30,14 +30,14 @@ public class AuthService(
         if (await userRepository.ExistsByEmailAsync(registerDto.Email))
         {
             logger.LogRegistrationWithExistingEmail();
-            throw new BusinessException (ErrorCodes.EMAIL_ALREADY_EXISTS, "Email already exists");
+            throw new BusinessException(ErrorCodes.EMAIL_ALREADY_EXISTS, "Email already exists");
         }
 
         // Verificar si el username ya existe
         if (await userRepository.ExistsByUsernameAsync(registerDto.Username))
         {
             logger.LogRegistrationWithExistingUsername();
-            throw new BusinessException (ErrorCodes.USERNAME_ALREADY_EXISTS, "Username already exists");
+            throw new BusinessException(ErrorCodes.USERNAME_ALREADY_EXISTS, "Username already exists");
         }
 
         // Validar y manejar la imagen de perfil
@@ -49,7 +49,7 @@ public class AuthService(
             if (!isValid)
             {
                 logger.LogWarning($"File validation failed: {errorMessage}");
-                throw new BusinessException (ErrorCodes.INVALID_FILE_FORMAT, errorMessage!);
+                throw new BusinessException(ErrorCodes.INVALID_FILE_FORMAT, errorMessage!);
             }
 
             try
@@ -60,12 +60,12 @@ public class AuthService(
             catch (Exception)
             {
                 logger.LogImageUploadError();
-                throw new BusinessException (ErrorCodes.IMAGE_UPLOAD_FAILED, "Failed to upload profile image");
+                throw new BusinessException(ErrorCodes.IMAGE_UPLOAD_FAILED, "Failed to upload profile image");
             }
         }
         else
         {
-            profilePicturePath = _cloudinaryService.GetDefaultProfilePictureUrl();
+            profilePicturePath = _cloudinaryService.GetDefaultAvatarUrl();
         }
 
         // Crear nuevo usuario y entidades relacionadas
@@ -253,8 +253,10 @@ public class AuthService(
 
         user.UserEmail.EmailVerified = true;
         user.Status = true;
-        user.UserEmail.EmailVerificactionToken = string.Empty;
-        user.UserEmail.EmailVerificationTokenExpiry = null;
+
+        // NO hacer esto:
+        // user.UserEmail.EmailVerificactionToken = null;
+        // user.UserEmail.EmailVerificationTokenExpiry = null;
 
         await userRepository.UpdateAsync(user);
 
@@ -429,4 +431,3 @@ public class AuthService(
         return MapToUserResponseDto(user);
     }
 }
-

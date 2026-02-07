@@ -139,7 +139,10 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
                 entity.Property(e => e.UserId)
                     .HasMaxLength(16);
                 entity.Property(e => e.EmailVerified).HasDefaultValue(false);
-                entity.Property(e => e.EmailVerificactionToken).HasMaxLength(256);
+                entity.Property(e => e.EmailVerificactionToken)
+                    .HasColumnName("email_verificaction_token")
+                    .IsRequired()
+                    .HasMaxLength(256);
             });
 
             // Configuración de UserPasswordReset
