@@ -253,7 +253,7 @@ public class AuthService(
 
         user.UserEmail.EmailVerified = true;
         user.Status = true;
-        user.UserEmail.EmailVerificactionToken = null;
+        user.UserEmail.EmailVerificactionToken = string.Empty;
         user.UserEmail.EmailVerificationTokenExpiry = null;
 
         await userRepository.UpdateAsync(user);

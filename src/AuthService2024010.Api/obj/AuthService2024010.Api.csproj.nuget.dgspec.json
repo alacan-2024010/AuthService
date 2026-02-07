@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\AuthService\\src\\AuthService2024010.Api\\AuthService2024010.Api.csproj",
         "projectName": "AuthService2024010.Api",
         "projectPath": "C:\\AuthService\\src\\AuthService2024010.Api\\AuthService2024010.Api.csproj",
-        "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages",
         "outputPath": "C:\\AuthService\\src\\AuthService2024010.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -105,11 +105,11 @@
         "projectUniqueName": "C:\\AuthService\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj",
         "projectName": "AuthService2024010.Application",
         "projectPath": "C:\\AuthService\\src\\AuthService2024010.Application\\AuthService2024010.Application.csproj",
-        "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages",
         "outputPath": "C:\\AuthService\\src\\AuthService2024010.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -200,11 +200,11 @@
         "projectUniqueName": "C:\\AuthService\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj",
         "projectName": "AuthService2024010.Domain",
         "projectPath": "C:\\AuthService\\src\\AuthService2024010.Domain\\AuthService2024010.Domain.csproj",
-        "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages",
         "outputPath": "C:\\AuthService\\src\\AuthService2024010.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -253,11 +253,11 @@
         "projectUniqueName": "C:\\AuthService\\src\\AuthService2024010.Persistence\\AuthService2024010.Persistence.csproj",
         "projectName": "AuthService2024010.Persistence",
         "projectPath": "C:\\AuthService\\src\\AuthService2024010.Persistence\\AuthService2024010.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages",
         "outputPath": "C:\\AuthService\\src\\AuthService2024010.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

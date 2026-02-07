@@ -7871,7 +7871,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Informatica\\.nuget\\packages\\": {}
+    "C:\\Users\\Francisco\\.nuget\\packages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -7879,11 +7879,11 @@
       "projectUniqueName": "C:\\AuthService\\src\\AuthService2024010.Api\\AuthService2024010.Api.csproj",
       "projectName": "AuthService2024010.Api",
       "projectPath": "C:\\AuthService\\src\\AuthService2024010.Api\\AuthService2024010.Api.csproj",
-      "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages",
       "outputPath": "C:\\AuthService\\src\\AuthService2024010.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
