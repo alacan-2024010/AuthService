@@ -491,3 +491,48 @@ System.UnauthorizedAccessException: Invalid credentials
 [2026-02-06 19:29:39 INF] HTTP POST /api/v1/auth/login responded 401 in 4425.6223 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNJ5T1CVBE7G:00000001","ConnectionId":"0HNJ5T1CVBE7G"}
 [2026-02-06 19:29:44 INF] User login succeeded. {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService2024010.Application.Services.AuthService","ActionId":"49610d41-58b1-4306-97ab-4ba004ff1717","ActionName":"AuthService2024010.Api.Controllers.AuthController.Login (AuthService2024010.Api)","RequestId":"0HNJ5T1CVBE7G:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5T1CVBE7G"}
 [2026-02-06 19:29:44 INF] HTTP POST /api/v1/auth/login responded 200 in 2482.5120 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNJ5T1CVBE7G:00000002","ConnectionId":"0HNJ5T1CVBE7G"}
+[2026-02-06 19:38:08 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-02-06 19:38:10 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-02-06 19:38:11 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-02-06 19:38:11 INF] AuthService API is running at http://localhost:5013. Health endpoint: http://localhost:5013/health {"SourceContext":"Program"}
+[2026-02-06 19:38:17 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNJ5T68GJ8PJ:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5T68GJ8PJ"}
+[2026-02-06 19:38:20 INF] User login succeeded. {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService2024010.Application.Services.AuthService","ActionId":"086ed60a-4339-4333-9dea-8a3fd2871afb","ActionName":"AuthService2024010.Api.Controllers.AuthController.Login (AuthService2024010.Api)","RequestId":"0HNJ5T68GJ8PJ:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5T68GJ8PJ"}
+[2026-02-06 19:38:20 INF] HTTP POST /api/v1/auth/login responded 200 in 3449.8747 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNJ5T68GJ8PJ:00000001","ConnectionId":"0HNJ5T68GJ8PJ"}
+[2026-02-06 19:46:52 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-02-06 19:46:54 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-02-06 19:46:54 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-02-06 19:46:55 INF] AuthService API is running at http://localhost:5013. Health endpoint: http://localhost:5013/health {"SourceContext":"Program"}
+[2026-02-06 19:47:05 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-02-06 19:47:06 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-02-06 19:47:06 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-02-06 19:47:06 INF] AuthService API is running at http://localhost:5013. Health endpoint: http://localhost:5013/health {"SourceContext":"Program"}
+[2026-02-06 19:49:56 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-02-06 19:49:57 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-02-06 19:49:58 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-02-06 19:49:58 INF] AuthService API is running at http://localhost:5013. Health endpoint: http://localhost:5013/health {"SourceContext":"Program"}
+[2026-02-06 19:50:05 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNJ5TCRO36QU:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TCRO36QU"}
+[2026-02-06 19:50:07 INF] User login succeeded. {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService2024010.Application.Services.AuthService","ActionId":"d176d92e-6a76-4e61-8e29-67aee5c992e9","ActionName":"AuthService2024010.Api.Controllers.AuthController.Login (AuthService2024010.Api)","RequestId":"0HNJ5TCRO36QU:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TCRO36QU"}
+[2026-02-06 19:50:07 INF] HTTP POST /api/v1/auth/login responded 200 in 2090.5270 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNJ5TCRO36QU:00000001","ConnectionId":"0HNJ5TCRO36QU"}
+[2026-02-06 19:51:51 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-02-06 19:51:53 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-02-06 19:51:53 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-02-06 19:51:53 INF] AuthService API is running at http://localhost:5013. Health endpoint: http://localhost:5013/health {"SourceContext":"Program"}
+[2026-02-06 19:51:56 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNJ5TDSP4SOE:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TDSP4SOE"}
+[2026-02-06 19:51:58 INF] User login succeeded. {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService2024010.Application.Services.AuthService","ActionId":"612570a4-89a5-4d3c-ad0a-a1b678d1f4af","ActionName":"AuthService2024010.Api.Controllers.AuthController.Login (AuthService2024010.Api)","RequestId":"0HNJ5TDSP4SOE:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TDSP4SOE"}
+[2026-02-06 19:51:58 INF] HTTP POST /api/v1/auth/login responded 200 in 2139.7931 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNJ5TDSP4SOE:00000001","ConnectionId":"0HNJ5TDSP4SOE"}
+[2026-02-06 19:52:44 INF] User login succeeded. {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService2024010.Application.Services.AuthService","ActionId":"612570a4-89a5-4d3c-ad0a-a1b678d1f4af","ActionName":"AuthService2024010.Api.Controllers.AuthController.Login (AuthService2024010.Api)","RequestId":"0HNJ5TDSP4SOE:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TDSP4SOE"}
+[2026-02-06 19:52:44 INF] HTTP POST /api/v1/auth/login responded 200 in 1674.4186 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNJ5TDSP4SOE:00000002","ConnectionId":"0HNJ5TDSP4SOE"}
+[2026-02-06 19:53:31 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-02-06 19:53:32 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-02-06 19:53:33 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-02-06 19:53:33 INF] AuthService API is running at http://localhost:5013. Health endpoint: http://localhost:5013/health {"SourceContext":"Program"}
+[2026-02-06 19:53:48 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNJ5TEU3TE28:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TEU3TE28"}
+[2026-02-06 19:53:50 INF] User login succeeded. {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService2024010.Application.Services.AuthService","ActionId":"c3840ea6-6b21-4853-8206-07b17f166736","ActionName":"AuthService2024010.Api.Controllers.AuthController.Login (AuthService2024010.Api)","RequestId":"0HNJ5TEU3TE28:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TEU3TE28"}
+[2026-02-06 19:53:50 INF] HTTP POST /api/v1/auth/login responded 200 in 2172.0676 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNJ5TEU3TE28:00000001","ConnectionId":"0HNJ5TEU3TE28"}
+[2026-02-06 19:54:52 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-02-06 19:54:54 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-02-06 19:54:54 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-02-06 19:54:55 INF] AuthService API is running at http://localhost:5013. Health endpoint: http://localhost:5013/health {"SourceContext":"Program"}
+[2026-02-06 19:55:29 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNJ5TFS2VIPI:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TFS2VIPI"}
+[2026-02-06 19:55:30 INF] User login succeeded. {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService2024010.Application.Services.AuthService","ActionId":"89ffa814-34ed-4dd0-bc7e-deea4fa2f620","ActionName":"AuthService2024010.Api.Controllers.AuthController.Login (AuthService2024010.Api)","RequestId":"0HNJ5TFS2VIPI:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNJ5TFS2VIPI"}
+[2026-02-06 19:55:30 INF] HTTP POST /api/v1/auth/login responded 200 in 1984.9739 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNJ5TFS2VIPI:00000001","ConnectionId":"0HNJ5TFS2VIPI"}
